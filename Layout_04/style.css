@@ -1,0 +1,148 @@
+:root {
+  --body: #a70000;
+  --brown: #5e0808;
+  --red: #ff0000;
+  --card: #ffd8d8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--body);
+}
+
+/** Nav Bar Styling */
+nav{
+    background-color: var(--brown);
+    min-height: 93px;  
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
+
+}
+
+.navsection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 93px;
+
+}
+
+.leftnav{
+    display: flex;
+    gap: 8px;
+    max-width: 488px;
+    height: 40px;
+    width: 100%;
+}
+
+.logo{
+    background-color: var(--red);
+    height: 40px;
+    min-width: 160px;
+}
+.link{
+    background-color: var(--red);
+    height: 40px;
+    width: 100%;
+
+}
+.avatar{
+    background-color: var(--red);
+    height: 64px;
+    width: 64px;
+    border-radius: 64px;
+    -webkit-border-radius: 64px;
+    -moz-border-radius: 64px;
+    -ms-border-radius: 64px;
+    -o-border-radius: 64px;
+}
+
+/* card Styleing */
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 36px;
+    
+}
+
+.card{
+    background-color: var(--card);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    gap: 24px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.cricle{
+    background-color: var(--red);
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.line{
+    border-radius: 6px;
+    height: 24px;
+    width: 100%;
+    background-color: var(--brown);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.line_container{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+/** Media Queries */
+
+/* big display */
+@media screen and (width > 1200px) {
+}
+/* Tablet */
+@media screen and (width < 1200px) and (width > 450px) {
+}
+/* Phone  */
+@media screen and (max-width: 620px) {
+  .logo {
+    background: var(--red);
+    height: 40px;
+    min-width: 90px;
+  }
+  .avatar {
+    height: 48px;
+    width: 48px;
+  }
+  .link{
+    width: 60px;
+  }
+  .left_nav {
+    max-width: 266px;
+  }
+}
+
+/*Extra small*/
+@media screen and (max-width: 500px){
+    .avatar{
+        display: none;
+    }
+}
+
