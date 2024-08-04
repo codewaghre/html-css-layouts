@@ -1,0 +1,146 @@
+:root {
+    --bg: #9dc783;
+    --container: #fff;
+    --red: #d01010;
+    --dark_green: #0aae42;
+    --light_green: #1bff69;
+
+    --spacing: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+.main_layout {
+    padding: 0 26px;
+    padding-bottom: 80px;
+    padding-top: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: var(--container);
+
+}
+
+.top_container {
+    min-height: 600px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-grow: 1;
+    gap: 16px;
+    padding: 16px;
+
+}
+
+.red_box {
+    background-color: var(--red);
+    min-height: 274px;
+
+}
+
+.bottom_container {
+    background-color: var(--container);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+    padding: 16px;
+}
+
+.dark_green {
+    min-height: 235px;
+    background-color: var(--dark_green);
+    /* margin-top: 12px; */
+
+}
+
+.green_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 64px;
+    gap: 16px;
+}
+
+.light_green {
+    background-color: var(--light_green);
+    width: 100%;
+    height: 100%;
+}
+
+/* Tablet */
+@media screen and (width < 1200px) and (width > 600px) {
+    .layout_main_spacing {
+        padding: 0 64px;
+    }
+
+    .top_container {
+        margin-top: 20px;
+    }
+     .bottom_container {
+        gap: 14px;
+
+    }
+
+    .bottom_container {
+        height: 469px;
+    }
+
+    .dark_green {
+        min-height: 280px;
+        background-color: var(--dark_green);
+
+    }
+
+    .green_grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+
+    }
+
+    .light_green {
+        height: 64px;
+    }
+
+     
+}
+
+/* Phone  */
+@media screen and (width < 600px) {
+    :root {
+        --spacing: 12px;
+    }
+
+    .layout_main_spacing {
+        padding: 0 16px;
+    }
+
+    .top_container {
+        margin-top: 16px;
+    }
+
+    .green_grid {
+        height: 204px;
+        grid-template-columns: 1fr;
+    }
+
+    .top_container {
+        grid-template-columns: 1fr;
+    }
+    .bottom_container{
+        height: 469px;
+    }
+
+
+    
+}
