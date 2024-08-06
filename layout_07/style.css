@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #3f007e;
+    --secondary: #d9d9d9;
+}
+
+
+.hide_scrollbar::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+/* For Firefox */
+.hide_scrollbar {
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* General hide_scrollbar styles */
+.hide_scrollbar {
+    overflow: auto;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+}
+
+/**First Container */
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 0 24px;
+
+    /** navigation */
+    .nav {
+        margin-top: 20px;
+        width: 100%;
+        height: 40px;
+        /* background-color: blue; */
+        display: flex;
+        justify-content: space-between;
+
+        .links {
+            width: 488px;
+            /* background-color: blueviolet; */
+            height: 40px;
+            display: flex;
+            gap: 10px;
+
+
+            .logo {
+                margin-right: 10px;
+                width: 160px;
+                height: 40px;
+                background-color: var(--primary);
+            }
+
+            .link {
+                width: 56px;
+                height: 40px;
+                background-color: var(--primary);
+            }
+        }
+
+        /**Left Navigation */
+        .lnav {
+            width: 371px;
+            height: 100%;
+            /* background-color: aqua; */
+            display: flex;
+            gap: 12px;
+
+            .search {
+                gap: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 319px;
+                background-color: var(--primary);
+                border-radius: 28px;
+                -webkit-border-radius: 28px;
+                -moz-border-radius: 28px;
+                -ms-border-radius: 28px;
+                -o-border-radius: 28px;
+
+                .circle {
+                    height: 20px;
+                    width: 20px;
+                    background-color: var(--secondary);
+                    border-radius: 29px;
+
+                }
+
+                .rect {
+
+                    height: 20px;
+                    width: 231px;
+                    background-color: var(--secondary);
+
+                }
+
+                .box1 {
+                    height: 20px;
+                    width: 20px;
+                    background-color: var(--secondary);
+                }
+            }
+
+            .avatar {
+                height: 40px;
+                width: 40px;
+                background-color: var(--primary);
+                border-radius: 29px;
+                -webkit-border-radius: 29px;
+                -moz-border-radius: 29px;
+                -ms-border-radius: 29px;
+                -o-border-radius: 29px;
+            }
+        }
+    }
+
+    .tags {
+        display: flex;
+        gap: 8px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+
+
+        span {
+            min-width: 79px;
+            height: 32px;
+            background-color: var(--primary);
+            border-radius: 21px;
+            -webkit-border-radius: 21px;
+            -moz-border-radius: 21px;
+            -ms-border-radius: 21px;
+            -o-border-radius: 21px;
+        }
+    }
+}
+
+
+/**Last Container */
+.botton_container {
+
+    display: flex;
+    gap: 18px;
+    flex-direction: column;
+    height: 900px;
+    /* background-color: aqua; */
+    width: 100%;
+    margin-bottom: 20px;
+
+    /**Ads Bannner */
+    .ads_banner {
+        display: flex;
+        gap: 16px;
+        margin-top: 18px;
+        overflow-x: auto;
+        margin-left: 10px;
+
+        .bannner {
+            height: 321px;
+            width: 489px;
+            background-color: var(--primary);
+            flex-shrink: 0;
+            border-radius: 16px;
+            -webkit-border-radius: 16px;
+            -moz-border-radius: 16px;
+            -ms-border-radius: 16px;
+            -o-border-radius: 16px;
+        }
+    }
+
+    /**Middle Show Rectangle */
+    .show {
+        width: 285px;
+        height: 40px;
+        background-color: var(--primary);
+        margin-left: 10px;
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+    }
+
+    /** Cards */
+    .cards {
+        display: flex;
+        gap: 12px;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+
+        .co_cards {
+            display: flex;
+
+            .card {
+                /* overflow-x: auto; */
+                width: 388px;
+                height: 133px;
+                padding: 8px;
+                border-radius: 8px;
+                background-color: var(--primary);
+                margin-left: 10px;
+                -webkit-border-radius: 8px;
+                -moz-border-radius: 8px;
+                -ms-border-radius: 8px;
+                -o-border-radius: 8px;
+
+                /**Cards Inner Structure */
+                .lines {
+                    /* padding: 8px; */
+                    display: flex;
+                    flex-direction: column;
+                    width: 170px;
+                    height: 80px;
+                    gap: 8px;
+
+                    .line1 {
+                        width: 170px;
+                        height: 16px;
+                        background-color: var(--secondary);
+                    }
+
+                    .box_container {
+                        display: flex;
+                        gap: 8px;
+
+                        .box1 {
+                            width: 24px;
+                            height: 16px;
+                            background-color: var(--secondary);
+                        }
+
+                        .box2 {
+                            width: 48px;
+                            height: 16px;
+                            background-color: var(--secondary);
+                        }
+                    }
+
+                    .line2 {
+                        width: 170px;
+                        height: 8px;
+                        background-color: var(--secondary);
+                    }
+                }
+
+                /** Card-Break Line */
+                .hr {
+                    margin-top: 10px;
+                }
+
+                /**Card Bottom Box  */
+                .bottom_boxes {
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    /* background-color: aqua; */
+                    width: 372px;
+                    height: 12px;
+
+
+                    .box {
+
+                        width: 80px;
+                        height: 12px;
+                        background-color: var(--secondary);
+
+                    }
+
+                    .boxes {
+                        display: flex;
+                        gap: 6px;
+
+
+                        .box1 {
+                            width: 80px;
+                            height: 12px;
+                            background-color: var(--secondary);
+
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    /** Grid  */
+    .girds {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        margin-left: 10px;
+        /* background-color: brown; */
+
+        .grid {
+            display: flex;
+            gap: 8px;
+        }
+
+        /**Grid box  */
+        .grid_box {
+
+            width: 387px;
+            height: 324px;
+            background-color: var(--primary);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 8px;
+            gap: 8px;
+
+
+            span {
+                width: 100%;
+                height: 100%;
+                background-color: var(--secondary);
+            }
+
+        }
+    }
+
+}
+
+
+/**Media screens for Resposnsivenesssss */
+
+@media screen and (width > 1200px) {}
+
+/* Tablet */
+@media screen and (width < 1200px) and (width > 450px) {
+    .container {
+        .nav {
+
+            gap: 16px;
+            display: flex;
+            /* height: 100px; */
+            flex-direction: column-reverse;
+            justify-content: flex-end;
+            align-items: flex-start;
+
+            .links {
+                display: flex;
+                justify-content: space-between;
+                height: 50px;
+                width: 100%;
+
+                .logo {
+                    width: 200px;
+                }
+
+                .link {
+                    width: 100px;
+                    gap: 2px;
+                }
+
+            }
+
+            .lnav {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        .tags {
+            margin-top: 55px;
+        }
+    }
+
+}
+
+
+/* Phone  */
+@media screen and (width < 600px) {
+
+    .container {
+        .nav {
+
+            gap: 16px;
+            display: flex;
+            /* height: 100px; */
+            flex-direction: column-reverse;
+            justify-content: flex-end;
+            align-items: flex-start;
+
+            .links {
+                display: flex;
+                justify-content: space-between;
+                height: 50px;
+                width: 100%;
+
+                .logo {
+                    width: 200px;
+                }
+
+                .link {
+                    width: 100px;
+                    gap: 2px;
+                }
+
+            }
+
+            .lnav {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .search {
+                    width: 280px;
+
+                    .circle {
+                        height: 16px;
+                        width: 16px;
+                    }
+
+                    .rect {
+                        height: 16px;
+                        width: 200px;
+                        background-color: var(--secondary);
+                    }
+
+                    .box1 {
+                        height: 16px;
+                        width: 16px;
+                        background-color: var(--secondary);
+                    }
+
+                }
+            }
+        }
+
+        .tags {
+            margin-top: 55px;
+        }
+
+    }
+}
